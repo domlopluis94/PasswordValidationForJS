@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./Passwords.js"></script>
+</head>
+
+<body>
+    <form>
+        <div id="form-main-container">
+            <div id="form-area">
+                <div id="form-title">
+                    Cambio de contraseña
+                </div>
+                <form id="form-body">
+                    <div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="old">Contraseña Antigua</label>
+                                <input type="text" class="form-control" id="old" placeholder="Input" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="new">Contraseña nueva</label>
+                                <input type="text" class="form-control" id="new" placeholder="Input" required>
+                                <p id="warnings"></p>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <fieldset class="form-group">
+                                <label class="form-label" for="confirmnew">Validación Contraseña nueva</label>
+                                <input type="text" class="form-control" id="confirmnew" placeholder="Input" required>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="center-text button-area">
+                            <button type="button" class="btn btn-cancel">Cambiar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+</body>
+
+<script>
+    passwordController.DynamicPasswordValidationWithWarings("new", "old", "warnings");
+</script>
+
+</html>
