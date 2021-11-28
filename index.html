@@ -37,7 +37,7 @@
                     </div>
                     <div>
                         <div class="center-text button-area">
-                            <button type="button" class="btn btn-cancel">Cambiar</button>
+                            <button id="submitNewPassword" type="button" class="btn btn-cancel">Cambiar</button>
                         </div>
 
                     </div>
@@ -48,7 +48,7 @@
 </body>
 
 <script>
-    passwordController.DynamicPasswordValidationWithWarings("new", "old", "warnings");
+    passwordController.DynamicPasswordValidationWithWaringsAndSecondValidation("new", "confirmnew", "old", "warnings", "submitNewPassword");
 </script>
 
 </html>
